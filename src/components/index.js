@@ -1,0 +1,11 @@
+export {default as Accordion} from './accordion/Accordion';
+export {default as CancelBtn} from './cancelBtn/CancelBtn';
+export {default as DarkBtn} from './darkBtn/DarkBtn';
+export {default as EnterPin} from './enterPin/EnterPin';
+export {default as ErrorPage} from './errorPage/ErrorPage';
+export {default as GlowHeading} from './glowHeading/GlowHeading';
+export {default as HeroSection} from './heroSection/HeroSection';
+export {default as Login} from './logIn/Login';
+export {default as Registeration} from './registration/Registration';
+export {default as ScanQR} from './scanQR/ScanQR';
+export {default as TextBtn} from './textBtn/TextBtn';

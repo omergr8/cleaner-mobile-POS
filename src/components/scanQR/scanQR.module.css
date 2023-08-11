@@ -1,0 +1,25 @@
+.box {
+  width: 480px !important;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  width: 480px;
+  height: 100vh;
+  border: 1px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 30px;
+}
+.headingTop {
+  text-align: right;
+}
+.heading {
+  text-align: center;
+  margin-top: 46px;
+}
+.qrimg {
+  margin-top: 30px;
+  width: 100%;
+  height: 45%;
+  color: #fff;
+}
