@@ -1,4 +1,38 @@
-.heading{
-    color: tomato;
-    font-size: 20px;
+.box {
+  padding: 50px 30px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.heading {
+  text-align: center;
+  font-weight: 600;
+  line-height: 0.92;
+  color: #e9ebff;
+  font-size: 18px;
+  margin-top: 94px;
+  letter-spacing: -2px;
+}
+.glow {
+  margin: 50px 0;
+}
+.GlowHeading {
+  text-align: center;
+  font-weight: 600;
+  line-height: 0.92;
+  color: #fff;
+  text-shadow: 0 0 54px rgba(30, 132, 242, 0.92);
+  font-size: 26px;
+  line-height: 1;
+  margin: 47px 0px;
+  letter-spacing: -1px;
+}
+.image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -186px;
+  left: 0px;
+  right: 0;
+  object-fit: cover;
 }

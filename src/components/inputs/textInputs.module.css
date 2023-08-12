@@ -1,0 +1,9 @@
+.inputsWrapper{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    text-align: center;
+}
+.center-placeholder::placeholder {
+    text-align: center;
+  }

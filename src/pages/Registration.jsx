@@ -1,4 +1,5 @@
 import { Registeration } from '../components'
+import styles from './registration.module.css'
 
 const Registration = () => {
   return (

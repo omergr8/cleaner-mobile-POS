@@ -1,0 +1,28 @@
+/* Text.module.css */
+
+.text {
+    margin: 0;
+    padding: 0;
+    transition: font-size 0.3s;
+    font-family: 'Bebas Neue';
+    color: #E9EBFF;
+  }
+  
+  .small {
+    font-size: 14px;
+  }
+  
+  .normal {
+    font-size: 16px;
+  }
+  
+  .medium {
+    font-size: 18px;
+  }
+  
+  .large {
+    font-size: 55px;
+  }
+  
+  /* Add custom styles for fontFamily here */
+  

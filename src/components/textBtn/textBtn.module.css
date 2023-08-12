@@ -1,0 +1,81 @@
+/* Button.module.css */
+
+.button {
+  font-family: "Bangers" !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  cursor: pointer;
+  border: none !important;
+  border-radius: 33px !important;
+  letter-spacing: 2px;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.xs {
+  font-size: 9px !important;
+}
+
+.sm {
+  font-size: 15px !important;
+}
+
+.lg {
+  font-size: 20px !important;
+}
+
+.xl {
+  font-size: 35px !important;
+}
+
+.green {
+  color: #00bf63 !important;
+}
+
+.red {
+  color: #ff3131 !important;
+}
+
+.yellow {
+  color: #fad02c !important;
+}
+
+.white {
+  color: #beefff !important;
+}
+
+.light {
+  color: #fff !important;
+}
+
+.gray {
+  color: #5c646b !important;
+}
+
+.noBg {
+  background-color: transparent !important;
+}
+
+.whiteBg {
+  background-color: #beefff !important;
+}
+
+.yellowBg {
+  background-color: #fad02c !important;
+}
+
+/* .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button:active {
+    background-color: #004080;
+  } */

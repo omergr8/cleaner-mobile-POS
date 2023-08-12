@@ -1,0 +1,25 @@
+/* Enter Number Stylings */
+.box {
+  height: 100vh;
+  margin-left: auto;
+  margin-left: auto;
+  position: relative;
+}
+.formWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.numberInput {
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+    text-align: center;
+    font-weight: 600;
+    line-height: 2.92;
+    color: #e9ebff;
+    font-size: 19px;
+    margin-top: 94px;
+  }

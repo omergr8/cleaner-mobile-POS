@@ -1,0 +1,12 @@
+.glowHeading {
+  color: #fff;
+  text-shadow: rgba(255, 255, 255, 0.83) 0px 0px 16px;
+  font-size: 125px;
+  font-weight: 500;
+  font-family: "MoonTime";
+  text-align: center;
+}
+.rotated {
+  transform: rotate(-12deg);
+  line-height: 1.5;
+}

@@ -1,0 +1,41 @@
+/* PhoneNumberDialPad.module.css */
+
+.phone-number-dial-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .phone-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .dial-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .dial-button {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dial-button:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .dial-button:active {
+    background-color: #bbb;
+    color: #333;
+  }
+  
