@@ -1,0 +1,25 @@
+
+.button {
+    font-family: "ABeeZee" !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 0px !important;
+    letter-spacing: 1px;
+    padding: 2px 22px !important;
+  }
+  
+  .gray {
+    color: #5c646b !important;
+  }
+  
+  
+  .whiteBg {
+    background-color: #beefff !important;
+  }
+  
+  .yellowBg {
+    background-color: #fad02c !important;
+  }
+  

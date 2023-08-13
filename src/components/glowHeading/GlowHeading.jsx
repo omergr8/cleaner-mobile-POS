@@ -2,8 +2,8 @@
 import styles from "./glowHeading.module.css";
 
 const GlowHeading = (props) => {
-  const { rotate, text } = props;
-  return <h2 className={`${styles.glowHeading}  ${rotate ? styles.rotated : ""}`}>{text}</h2>;
+  const { rotate, children, size} = props;
+  return <h2 className={`${styles.glowHeading}  ${rotate ? styles.rotated : ""} ${styles[size]}`}>{children}</h2>;
 };
 
 export default GlowHeading;

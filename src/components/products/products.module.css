@@ -1,0 +1,19 @@
+.productWrapper {
+    margin-top: 10px;
+}
+.title {
+  font-size: 25px;
+  color: #fad02c;
+}
+.subCategoryWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.para {
+  color: #fff;
+  font-size: 7px;
+  text-align: left;
+  font-family: 'ABeeZee';
+  margin-bottom: 5px;
+}
