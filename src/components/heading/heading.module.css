@@ -1,28 +1,34 @@
 /* Text.module.css */
 
 .text {
-    margin: 0;
-    padding: 0;
-    transition: font-size 0.3s;
-    font-family: 'Bebas Neue';
-    color: #E9EBFF;
-  }
-  
-  .small {
-    font-size: 14px;
-  }
-  
-  .normal {
-    font-size: 16px;
-  }
-  
-  .medium {
-    font-size: 18px;
-  }
-  
-  .large {
-    font-size: 55px;
-  }
-  
-  /* Add custom styles for fontFamily here */
-  
+  margin: 0;
+  padding: 0;
+  transition: font-size 0.3s;
+  font-family: "Bebas Neue";
+  color: #e9ebff;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.normal {
+  font-size: 16px;
+}
+.white {
+  color: #e9ebff;
+}
+.yellow {
+  color: #fad02c;
+}
+.medium {
+  font-size: 40px;
+  line-height: 0.8;
+  letter-spacing: -1px;
+}
+
+.large {
+  font-size: 55px;
+}
+
+/* Add custom styles for fontFamily here */

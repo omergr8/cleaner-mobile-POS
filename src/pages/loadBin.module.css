@@ -1,0 +1,49 @@
+.box {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 90px 60px 30px;
+}
+.btnWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.videoWrapper {
+  border: 10px solid #beefff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.minivideo{
+    width: 70%;
+}
+.bucketImage {
+  width: 25%;
+  height: auto;
+  margin: 5px 0;
+}
+.number {
+  font-size: 10px;
+  font-family: "ABeeZee";
+  font-weight: 300;
+  color: #e9ebff;
+}
+.loadText {
+  font-size: 10px;
+  font-family: "ABeeZee";
+  font-weight: 300;
+  color: #e9ebff;
+  margin-bottom: 0;
+}
+.binWrapper{
+    margin-bottom: 0;
+    width: 60%;
+}
