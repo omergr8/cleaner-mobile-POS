@@ -14,3 +14,4 @@ export { default as TextInputs } from "./inputs/TextInputs";
 export { default as TextBtn } from "./textBtn/TextBtn";
 export { default as Popup } from "./popup/Popup";
 export { default as Products } from "./products/Products";
+export { default as PaymentCancelPopup } from "./popup/PaymentCancelPopup";

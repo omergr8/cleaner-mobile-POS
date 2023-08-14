@@ -7,6 +7,7 @@ import EnterNumber from "../pages/EnterNumber";
 import LoadBin from "../pages/LoadBin";
 import GreatJob from "../pages/GreatJob";
 import UltimateClean from "../pages/UltimateClean";
+import PaymentFail from "../pages/paymentFail/PaymentFail";
 
 const Routers = () => {
   return (
@@ -21,6 +22,7 @@ const Routers = () => {
           <Route path="/registration" element={<Registration />} />
           <Route path="/enter-number" element={<EnterNumber />} />
           <Route path="/scan-qr" element={<QRPage />} />
+          <Route path="/payment-fail" element={<PaymentFail />} />
         </Routes>
       </Router>
     </div>
