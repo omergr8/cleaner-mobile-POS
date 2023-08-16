@@ -9,7 +9,7 @@ const TextBtn = (props) => {
   // variant=""
   // size=" xs- sm - lg - xl "
   // textColor=" red - green - yellow - white - light - gray "
-  // backgroundColor=" white - yellow - noBg "
+  // backgroundColor=" whiteBg - yellowBg - noBg "
   // * Example BTn
   // <TextBtn size="xl" textColor="gray" backgroundColor="yellowBg">
   //   Dark Gray

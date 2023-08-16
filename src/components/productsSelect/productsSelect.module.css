@@ -1,0 +1,38 @@
+.productWrapper {
+  margin-top: 10px;
+}
+.title {
+  font-size: 40px;
+  color: #fad02c;
+  text-align: left;
+}
+.subCategoryWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+}
+.para {
+  color: #fff;
+  font-size: 9px;
+  text-align: left;
+  font-family: "ABeeZee";
+  margin-bottom: 5px;
+}
+.textWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.reloadImg {
+  width: 14px;
+  height: 14px;
+  margin-top: 10px;
+}
+.type {
+  font-family: bangers;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.Bottomwrapper{
+  margin-top: 22px;
+}

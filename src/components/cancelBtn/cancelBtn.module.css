@@ -2,12 +2,12 @@
 .button {
     font-family: "ABeeZee" !important;
     font-weight: 400 !important;
-    font-size: 15px !important;
+    font-size: 10px !important;
     cursor: pointer;
     border: none !important;
     border-radius: 0px !important;
     letter-spacing: 1px;
-    padding: 2px 22px !important;
+    padding: 2px 27px !important;
   }
   
   .gray {

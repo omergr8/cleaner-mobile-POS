@@ -7,6 +7,8 @@ import EnterNumber from "../pages/EnterNumber";
 import LoadBin from "../pages/LoadBin";
 import GreatJob from "../pages/GreatJob";
 import UltimateClean from "../pages/UltimateClean";
+import UltimateCleanSelect from "../pages/ultimateCleanSelect/UltimateCleanSelect";
+import UltimateCleanDetergent from "../pages/ultimateCleanDetergent/UltimateCleanDetergent";
 
 const Routers = () => {
   return (
@@ -16,11 +18,13 @@ const Routers = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/great-job" element={<GreatJob />} />
-          <Route path="/ultimate-clean" element={<UltimateClean />} />
           <Route path="/load-bin" element={<LoadBin />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/enter-number" element={<EnterNumber />} />
           <Route path="/scan-qr" element={<QRPage />} />
+          <Route path="/ultimate-clean" element={<UltimateClean />} />
+          <Route path="/ultimate-clean-select" element={<UltimateCleanSelect />} />
+          <Route path="/ultimate-clean-detergent" element={<UltimateCleanDetergent />} />
         </Routes>
       </Router>
     </div>
