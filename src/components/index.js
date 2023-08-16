@@ -16,3 +16,4 @@ export { default as Popup } from "./popup/Popup";
 export { default as Products } from "./products/Products";
 export { default as DetergentCard } from "./detergentCard/DetergentCard";
 export { default as ProductsSelect } from "./productsSelect/ProductsSelect";
+export { default as PaymentCancelPopup } from "./popup/PaymentCancelPopup";

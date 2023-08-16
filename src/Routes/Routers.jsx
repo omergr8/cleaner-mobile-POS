@@ -9,6 +9,7 @@ import GreatJob from "../pages/GreatJob";
 import UltimateClean from "../pages/UltimateClean";
 import UltimateCleanSelect from "../pages/ultimateCleanSelect/UltimateCleanSelect";
 import UltimateCleanDetergent from "../pages/ultimateCleanDetergent/UltimateCleanDetergent";
+import PaymentFail from "../pages/paymentFail/PaymentFail";
 
 const Routers = () => {
   return (
@@ -25,6 +26,7 @@ const Routers = () => {
           <Route path="/ultimate-clean" element={<UltimateClean />} />
           <Route path="/ultimate-clean-select" element={<UltimateCleanSelect />} />
           <Route path="/ultimate-clean-detergent" element={<UltimateCleanDetergent />} />
+          <Route path="/payment-fail" element={<PaymentFail />} />
         </Routes>
       </Router>
     </div>
