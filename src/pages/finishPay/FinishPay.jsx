@@ -2,9 +2,9 @@ import {
   CancelBtn,
   GlowHeading,
   Heading,
-  Products,
   ProductsSelect,
   TextBtn,
+  TransparentPopup,
 } from "../../components";
 import styles from "./finishPay.module.css";
 import bucket from "../../assets/bucket.png";
@@ -170,10 +170,15 @@ const UltimateCleanSelect = () => {
         </TextBtn>
       </div>
       <div className={styles.cancelBtn}>
-        <CancelBtn backgroundColor="yellowBg" textColor="gray">
+        <CancelBtn backgroundColor="whiteBg" textColor="gray">
           Cancel
         </CancelBtn>
       </div>
+      {/* <TransparentPopup>
+        <Heading size="mid" color="yellow">
+          PLEASE SEE CASHIER
+        </Heading>
+      </TransparentPopup> */}
     </section>
   );
 };

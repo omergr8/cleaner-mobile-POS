@@ -1,0 +1,19 @@
+.boxWrapper {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 87%;
+  height: 460px;
+  border: 1px solid #0d1e33;
+  background-color: #0d1e33;
+  border-radius: 20px;
+  padding: 50px 45px;
+  opacity: 0.8;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
