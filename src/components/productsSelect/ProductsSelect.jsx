@@ -6,8 +6,8 @@ import { Form } from "react-bootstrap";
 import { useState } from "react";
 import TextBtn from "../textBtn/TextBtn";
 
-const ProductsSelect = () => {
-  // const { productsData } = props; // Corrected destructuring
+const ProductsSelect = (props) => {
+  const { productsData, apply } = props; // Corrected destructuring
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -49,15 +49,17 @@ const ProductsSelect = () => {
           <TextBtn size="sm" backgroundColor="whiteBg" textColor="gray">
             CONFIRM
           </TextBtn>
-          <Form className="mt-3 w-75">
-            <Form.Check
-              type="checkbox"
-              id="checkboxId"
-              label="apply to all"
-              checked={isChecked}
-              onChange={handleCheckboxChange}
-            />
-          </Form>
+          {!apply && (
+            <Form className="mt-3 w-75">
+              <Form.Check
+                type="checkbox"
+                id="checkboxId"
+                label="apply to all"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+            </Form>
+          )}
         </div>
       </div>
     </div>

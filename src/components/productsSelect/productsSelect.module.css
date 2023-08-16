@@ -9,7 +9,6 @@
 .subCategoryWrapper {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 10px;
 }
 .para {
   color: #fff;
