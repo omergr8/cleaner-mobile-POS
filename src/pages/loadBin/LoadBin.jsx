@@ -1,11 +1,20 @@
-import { Heading, TextBtn } from "../components/index";
+import { Heading, TextBtn } from "../../components/index";
 import styles from "./loadBin.module.css";
-import binVideo from "../assets/da6ef29703.mp4";
-import bucket from "../assets/bucket.png";
+import binVideo from "../../assets/da6ef29703.mp4";
+import bucket from "../../assets/bucket.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoadBin = () => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
+  const navigate = useNavigate();
+
+  const handleLoadBin = () => {
+    navigate("/great-job");
+  };
+  const handleCancelBin = () => {
+    navigate("/cancel-popup");
+  };
   return (
     <section className={`${styles.box}`}>
       <Heading size="large">PLEASE LOAD BIN</Heading>
@@ -38,10 +47,10 @@ const LoadBin = () => {
       )}
 
       <div className={` ${styles.btnWrapper}`}>
-        <TextBtn size="md" textColor="green" backgroundColor="noBg">
+        <TextBtn size="md" textColor="green" backgroundColor="noBg" onClick={handleLoadBin}>
           DONE
         </TextBtn>
-        <TextBtn size="md" textColor="red" backgroundColor="noBg">
+        <TextBtn size="md" textColor="red" backgroundColor="noBg" onClick={handleCancelBin}>
           CANCEL
         </TextBtn>
       </div>

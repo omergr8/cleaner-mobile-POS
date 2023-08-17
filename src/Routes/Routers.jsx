@@ -4,8 +4,8 @@ import LoginPage from "../pages/LoginPage";
 import Registration from "../pages/Registration";
 import QRPage from "../pages/QRPage";
 import EnterNumber from "../pages/EnterNumber";
-import LoadBin from "../pages/LoadBin";
-import GreatJob from "../pages/GreatJob";
+import LoadBin from "../pages/loadBin/LoadBin";
+import GreatJob from "../pages/greatJob/GreatJob";
 import UltimateClean from "../pages/UltimateClean";
 import UltimateCleanSelect from "../pages/ultimateCleanSelect/UltimateCleanSelect";
 import UltimateCleanDetergent from "../pages/ultimateCleanDetergent/UltimateCleanDetergent";
@@ -13,19 +13,24 @@ import PaymentFail from "../pages/paymentFail/PaymentFail";
 import FinishPay from "../pages/finishPay/FinishPay";
 import ConfirmSelection from "../pages/confirmSelection/ConfirmSelection";
 import HowToPay from "../pages/howToPay/HowToPay";
+import LoadBin2 from "../pages/loadBin2/LoadBin2";
+import GreatJob2 from "../pages/greatJob2/GreatJob2";
+import CancelPopup from "../pages/cancelPopup/CancelPopup";
 
 const Routers = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/great-job" element={<GreatJob />} />
-          <Route path="/load-bin" element={<LoadBin />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/enter-number" element={<EnterNumber />} />
           <Route path="/scan-qr" element={<QRPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/enter-number" element={<EnterNumber />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/load-bin" element={<LoadBin />} />
+          <Route path="/load-bin2" element={<LoadBin2 />} />
+          <Route path="/cancel-popup" element={<CancelPopup />} />
+          <Route path="/great-job" element={<GreatJob />} />
+          <Route path="/great-job2" element={<GreatJob2 />} />
           <Route path="/ultimate-clean" element={<UltimateClean />} />
           <Route path="/ultimate-clean-select" element={<UltimateCleanSelect />} />
           <Route path="/ultimate-clean-detergent" element={<UltimateCleanDetergent />} />
@@ -33,6 +38,7 @@ const Routers = () => {
           <Route path="/finish-pay" element={<FinishPay />} />
           <Route path="/how-to-pay" element={<HowToPay />} />
           <Route path="/payment-fail" element={<PaymentFail />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </Router>
     </div>

@@ -1,23 +1,34 @@
-import { Heading, TextBtn } from "../components";
-import bucket from "../assets/bucket.png";
-import styles from "./greatJob.module.css";
+import { Heading, TextBtn } from "../../components";
+import bucket from "../../assets/bucket.png";
+import styles from "./greatJob2.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const GreatJob = () => {
+const GreatJob2 = () => {
   const [imageData, setImageData] = useState([
     {
       id: 0,
       img: bucket,
       count: 82,
     },
+    {
+      id: 1,
+      img: bucket,
+      count: 83,
+    },
   ]);
+  const navigate = useNavigate();
+
+  const handleAccept = () => {
+    navigate("/ultimate-clean");
+  };
+  const handleCancelBin = () => {
+    navigate("/cancel-popup");
+  };
   const dublicateImageData = () => {
-    const newId = imageData.length; 
-    const newCount = imageData[imageData.length - 1].count + 1; 
-    const newImageData = [
-      ...imageData,
-      { id: newId, img: bucket, count: newCount }, 
-    ];
+    const newId = imageData.length;
+    const newCount = imageData[imageData.length - 1].count + 1;
+    const newImageData = [...imageData, { id: newId, img: bucket, count: newCount }];
     setImageData(newImageData);
     console.log("imageData", imageData);
   };
@@ -55,10 +66,10 @@ const GreatJob = () => {
         </TextBtn>
       </div>
       <div className={` ${styles.btnWrapper}`}>
-        <TextBtn size="md" textColor="white" backgroundColor="noBg">
+        <TextBtn size="md" textColor="white" backgroundColor="noBg" onClick={handleAccept}>
           DONE
         </TextBtn>
-        <TextBtn size="md" textColor="white" backgroundColor="noBg">
+        <TextBtn size="md" textColor="white" backgroundColor="noBg" onClick={handleCancelBin}>
           CANCEL
         </TextBtn>
       </div>
@@ -66,4 +77,4 @@ const GreatJob = () => {
   );
 };
 
-export default GreatJob;
+export default GreatJob2;
