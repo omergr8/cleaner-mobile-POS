@@ -3,8 +3,8 @@ import styles from "./textBtn.module.css";
 import { Button as BootstrapButton } from "react-bootstrap";
 
 const TextBtn = (props) => {
-  const { children, onClick, variant, size, textColor, backgroundColor } = props;
-  const buttonClassName = `${styles.button} ${styles[variant]} ${styles[textColor]} ${styles[backgroundColor]} ${styles[size]}`;
+  const { children, onClick, variant, size, textColor, backgroundColor, border } = props;
+  const buttonClassName = `${styles.button} ${styles[variant]} ${styles[textColor]} ${styles[border]} ${styles[backgroundColor]} ${styles[size]}`;
 
   // variant=""
   // size=" xs- sm - lg - xl "

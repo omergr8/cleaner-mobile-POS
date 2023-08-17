@@ -12,6 +12,7 @@ import UltimateCleanDetergent from "../pages/ultimateCleanDetergent/UltimateClea
 import PaymentFail from "../pages/paymentFail/PaymentFail";
 import FinishPay from "../pages/finishPay/FinishPay";
 import ConfirmSelection from "../pages/confirmSelection/ConfirmSelection";
+import HowToPay from "../pages/howToPay/HowToPay";
 
 const Routers = () => {
   return (
@@ -30,6 +31,7 @@ const Routers = () => {
           <Route path="/ultimate-clean-detergent" element={<UltimateCleanDetergent />} />
           <Route path="/confirm-selection" element={<ConfirmSelection />} />
           <Route path="/finish-pay" element={<FinishPay />} />
+          <Route path="/how-to-pay" element={<HowToPay />} />
           <Route path="/payment-fail" element={<PaymentFail />} />
         </Routes>
       </Router>

@@ -10,7 +10,10 @@
   letter-spacing: 2px;
   padding: 3px 25px !important;
 }
-
+.borderLight{
+  border: 4px solid #fff !important;
+  
+}
 .primary {
   background-color: #007bff;
   color: white;
