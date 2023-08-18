@@ -1,22 +1,9 @@
-import {
-  CancelBtn,
-  GlowHeading,
-  Heading,
-  ProductsSelect,
-  TextBtn,
-  TransparentPopup,
-} from "../../components";
+import { CancelBtn, GlowHeading, Heading, ProductsSelect } from "../../components";
 import styles from "./howToPay.module.css";
 import bucket from "../../assets/bucket.png";
 import yellowReload from "../../assets/yellow-reload.png";
 import blueReload from "../../assets/blue-reload.png";
 import { useState } from "react";
-import { BsChevronDoubleRight } from "react-icons/bs";
-import tick from "../../assets/tick.png";
-import cash from "../../assets/cash.png";
-import card from "../../assets/card.png";
-import visa from "../../assets/visa.png";
-import HowToPayPopup from "../../components/transparentPopups/HowToPayPopup";
 
 const HowToPay = () => {
   const [imageData, setImageData] = useState([
@@ -180,85 +167,6 @@ const HowToPay = () => {
           Cancel
         </CancelBtn>
       </div>
-
-      {/* How do pay */}
-      <HowToPayPopup />
-
-      {/* use Default Card */}
-      {/* <TransparentPopup>
-        <div style={{ margin: "-10px 0px 40px" }}>
-          <Heading size="mid" color="white">
-            Use default card?
-          </Heading>
-        </div>
-        <div style={{ display: "flex", gap: "20px", alignItems: "center", margin: "20px 0px" }}>
-          <img src={visa} alt="tick" style={{ width: "50px", height: "auto" }} />
-          <p style={{ fontFamily: "Bebas Neue", fontSize: "20px", color: "#fff", marginBottom: 0 }}>
-            Ending 4242
-          </p>
-          <p
-            style={{
-              fontFamily: "Bebas Neue",
-              fontSize: "20px",
-              color: "#FAD02C",
-              marginBottom: 0,
-            }}>
-            Default
-          </p>
-        </div>
-        <div style={{ display: "flex", gap: "20px", alignItems: "center", margin: "40px 0px" }}>
-          <TextBtn size="sm" backgroundColor="noBg" textColor="light" border="borderLight">
-            SWIPE <BsChevronDoubleRight />
-          </TextBtn>
-          <p style={{ fontFamily: "Bebas Neue", fontSize: "20px", color: "#fff", marginBottom: 0 }}>
-            New
-          </p>
-        </div>
-        <Heading size="mid" color="white">
-          $19.49
-        </Heading>
-        <TextBtn size="xl" textColor="yellow" backgroundColor="noBg">
-          CONFIRM
-        </TextBtn>
-      </TransparentPopup> */}
-
-      {/* Last Transparent Popup */}
-      {/* <TransparentPopup>
-        <div style={{ display: "flex", margin: '20px 0px' }}>
-          <img src={tick} alt="tick" style={{ width: "80px", height: "80px " }} />
-          <h3
-            style={{ fontFamily: "Bebas Neue", fontSize: "28px", color: "#fff", fontWeight: 300 }}>
-            All set! your estimated completion time is
-          </h3>
-        </div>
-        <Heading size="mid" color="yellow">
-          2 HOURS 30 MINUTES
-        </Heading>
-      </TransparentPopup> */}
-
-      {/* Card - Swipe */}
-      {/* <TransparentPopup>
-        <div className={styles.srapWrapper}>
-        <TextBtn size="xl" backgroundColor="noBg" textColor="light" border='borderLight'>
-            SWIPE <BsChevronDoubleRight/>
-          </TextBtn>
-          <div style={{height: '15px'}}></div>
-        <Heading size="small" color="white">
-          SWIPE OR TAP CARD BELOW
-        </Heading>
-        <div style={{height: '85px'}}></div>
-        <Heading size="medium" color="blue">
-          $19.49
-        </Heading>
-        </div>
-      </TransparentPopup> */}
-
-      {/* cash - PLEASE SEE CASHIER */}
-      {/* <TransparentPopup>
-        <Heading size="mid" color="yellow">
-          PLEASE SEE CASHIER
-        </Heading>
-      </TransparentPopup> */}
     </section>
   );
 };
