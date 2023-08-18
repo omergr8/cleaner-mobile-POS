@@ -11,8 +11,14 @@ import bucket from "../../assets/bucket.png";
 import yellowReload from "../../assets/yellow-reload.png";
 import blueReload from "../../assets/blue-reload.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const UltimateCleanSelect = () => {
+  const navigate = useNavigate();
+
+  const handleFinish = () => {
+    navigate("/how-to-pay");
+  };
   const [imageData, setImageData] = useState([
     {
       id: 0,
@@ -165,7 +171,7 @@ const UltimateCleanSelect = () => {
         <ProductsSelect productsData={productsData} apply="false" />
       </div>
       <div className={styles.Bottomwrapper}>
-        <TextBtn size="lg" backgroundColor="yellowBg" textColor="gray">
+        <TextBtn size="lg" backgroundColor="yellowBg" textColor="gray" onClick={handleFinish}>
           FINISH & PAY
         </TextBtn>
       </div>

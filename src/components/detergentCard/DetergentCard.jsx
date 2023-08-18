@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { TextBtn } from "../index";
 import styles from "./detergentCard.module.css";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const DetergentCard = () => {
+  const navigate = useNavigate();
+
+  const handleConfirmSelection = () => {
+    navigate("/finish-pay");
+  };
   return (
     <div className={styles.box}>
       <h2 className={styles.heading}>DETERGENT</h2>
@@ -21,7 +27,7 @@ const DetergentCard = () => {
         </div>
       </div>
 
-      <TextBtn size="lg" backgroundColor="noBg" textColor="white">
+      <TextBtn size="lg" backgroundColor="noBg" textColor="white" onClick={handleConfirmSelection}>
        <AiOutlineCheckCircle />  Confirm
       </TextBtn>
     </div>

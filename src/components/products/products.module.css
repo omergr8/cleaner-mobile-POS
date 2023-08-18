@@ -4,6 +4,7 @@
 .title {
   font-size: 25px;
   color: #fad02c;
+  cursor: pointer;
 }
 .subCategoryWrapper {
     display: grid;

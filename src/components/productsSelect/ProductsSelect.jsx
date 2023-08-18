@@ -5,6 +5,7 @@ import blueReload from "../../assets/blue-reload.png";
 import { Form } from "react-bootstrap";
 import { useState } from "react";
 import TextBtn from "../textBtn/TextBtn";
+import { useNavigate } from "react-router-dom";
 
 const ProductsSelect = (props) => {
   const { productsData, apply } = props; // Corrected destructuring
@@ -12,6 +13,11 @@ const ProductsSelect = (props) => {
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
+  };
+  const navigate = useNavigate();
+
+  const handleCleanDetergent = () => {
+    navigate("/ultimate-clean-detergent");
   };
   return (
     <div className={styles.root}>
@@ -46,7 +52,7 @@ const ProductsSelect = (props) => {
           </div>
         </div>
         <div className={styles.Bottomwrapper}>
-          <TextBtn size="sm" backgroundColor="whiteBg" textColor="gray">
+          <TextBtn size="sm" backgroundColor="whiteBg" textColor="gray" onClick={handleCleanDetergent}>
             CONFIRM
           </TextBtn>
           {!apply && (
