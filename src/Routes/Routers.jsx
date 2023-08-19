@@ -13,8 +13,6 @@ import PaymentFail from "../pages/paymentFail/PaymentFail";
 import FinishPay from "../pages/finishPay/FinishPay";
 import ConfirmSelection from "../pages/confirmSelection/ConfirmSelection";
 import HowToPay from "../pages/howToPay/HowToPay";
-import LoadBin2 from "../pages/loadBin2/LoadBin2";
-import GreatJob2 from "../pages/greatJob2/GreatJob2";
 import CancelPopup from "../pages/cancelPopup/CancelPopup";
 
 const Routers = () => {
@@ -27,10 +25,8 @@ const Routers = () => {
           <Route path="/enter-number" element={<EnterNumber />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/load-bin" element={<LoadBin />} />
-          <Route path="/load-bin2" element={<LoadBin2 />} />
           <Route path="/cancel-popup" element={<CancelPopup />} />
           <Route path="/great-job" element={<GreatJob />} />
-          <Route path="/great-job2" element={<GreatJob2 />} />
           <Route path="/ultimate-clean" element={<UltimateClean />} />
           <Route path="/ultimate-clean-select" element={<UltimateCleanSelect />} />
           <Route path="/ultimate-clean-detergent" element={<UltimateCleanDetergent />} />

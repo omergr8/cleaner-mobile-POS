@@ -44,6 +44,8 @@
   margin-bottom: 0;
 }
 .binWrapper{
-    margin-bottom: 0;
-    width: 60%;
+  margin-bottom: 0;
+}
+.binsList{
+display: flex;
 }

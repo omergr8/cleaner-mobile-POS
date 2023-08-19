@@ -4,43 +4,6 @@ import yellowReload from "../assets/yellow-reload.png";
 import blueReload from "../assets/blue-reload.png";
 import bucket from "../assets/bucket.png";
 
-const bucketStore = (set) => ({
-  buckets: [],
-  addBucket: (bucket) => {
-    set((state) => ({
-      buckets: [bucket, ...state.buckets],
-    }));
-  },
-  removeBucket: (bucketId) => {
-    set((state) => ({
-      buckets: state.courses.filter((b) => b.id !== bucketId),
-    }));
-  },
-});
-
-const useBucketStore = create(
-  devtools(
-    persist(bucketStore, {
-      name: "buckets",
-    })
-  )
-);
-// const productStore = (set) => ({});
-
-// const useStore = create((set) => ({
-//   count: 1,
-//   inc: () => set((state) => ({ count: state.count + 1 })),
-// }));
-
-// function Counter() {
-//   const { count, inc } = useStore();
-//   return (
-//     <div>
-//       <span>{count}</span>
-//       <button onClick={inc}>one up</button>
-//     </div>
-//   );
-// }
 // - Products State Setup
 const products = [
   {
@@ -167,11 +130,11 @@ export const useStore = create((set) => ({
 
 // - Bucket Image Setup
 const bucketData = [
-  {
-    id: 0,
-    img: bucket,
-    count: 82,
-  },
+  // {
+  //   id: 0,
+  //   img: bucket,
+  //   count: 82,
+  // },
   // {
   //   id: 1,
   //   img: bucket,
@@ -182,5 +145,3 @@ const bucketData = [
 export const useBuckettStore = create((set) => ({
   bucketData,
 }));
-
-export default bucketStore;

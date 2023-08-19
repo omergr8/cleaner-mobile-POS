@@ -1,14 +1,21 @@
 import styles from "./popup.module.css";
 import { Heading, TextBtn } from "../index";
+import { useNavigate } from "react-router-dom";
 
 const Popup = () => {
+  const navigate = useNavigate();
+
+  const handleNotCancel = () => {
+    navigate("/load-bin");
+  };
+
   return (
     <div className={` ${styles.boxWrapper}`}>
       <div className={styles.box}>
         <Heading size="mid" color="white">
           CANCEL
         </Heading>
-        <div style={{margin: '30px 10px'}}>
+        <div style={{ margin: "30px 10px" }}>
           <Heading size="small" color="yellow">
             Are you sure you want to cancel?
           </Heading>
@@ -20,7 +27,7 @@ const Popup = () => {
           <TextBtn size="sm" textColor="red" backgroundColor="noBg">
             CANCEL
           </TextBtn>
-          <TextBtn size="sm" textColor="green" backgroundColor="noBg">
+          <TextBtn size="sm" textColor="green" backgroundColor="noBg" onClick={handleNotCancel}>
             DON'T CANCEL
           </TextBtn>
         </div>

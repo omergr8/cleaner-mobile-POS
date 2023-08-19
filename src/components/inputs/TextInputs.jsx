@@ -1,8 +1,11 @@
 import { Form } from "react-bootstrap";
 import styles from "./textInputs.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const TextInputs = () => {
+  const navigate = useNavigate();
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -10,6 +13,7 @@ const TextInputs = () => {
 
   const handleInputsSubmit = (e) => {
     e.preventDefault();
+    navigate("/load-bin");
     console.log("Form submitted:", {
       firstName,
       lastName,
