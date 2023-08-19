@@ -18,3 +18,12 @@ export { default as PaymentCancelPopup } from "./popup/PaymentCancelPopup";
 export { default as Products } from "./products/Products";
 export { default as DetergentCard } from "./detergentCard/DetergentCard";
 export { default as ProductsSelect } from "./productsSelect/ProductsSelect";
+export { default as BucketCount } from "./bucketCount/BucketCount";
+
+export { default as HowToPayPopup } from "./transparentPopups/HowToPayPopup";
+export { default as AllSet } from "./transparentPopups/AllSet";
+export { default as DdfaultCard } from "./transparentPopups/DdfaultCard";
+export { default as PaymentError } from "./transparentPopups/PaymentError";
+export { default as PaymentMethod } from "./transparentPopups/PaymentMethod";
+export { default as SeeCashier } from "./transparentPopups/SeeCashier";
+export { default as Swip } from "./transparentPopups/Swip";

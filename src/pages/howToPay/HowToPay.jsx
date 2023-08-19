@@ -1,4 +1,4 @@
-import { CancelBtn, GlowHeading, Heading, ProductsSelect } from "../../components";
+import { CancelBtn, GlowHeading, Heading, ProductsSelect, HowToPayPopup } from "../../components";
 import styles from "./howToPay.module.css";
 import { useStore, useBuckettStore } from "../../store/productStore";
 
@@ -38,6 +38,7 @@ const HowToPay = () => {
           Cancel
         </CancelBtn>
       </div>
+      <HowToPayPopup />
     </section>
   );
 };

@@ -13,12 +13,17 @@ const LoadBin = () => {
 
   const handleLoadBin = () => {
     useBuckettStore.setState({
-      bucketData: [{
-        id: 0,
-        img: bucket,
-        count: 82,
-      }]
+      bucketData: [
+        {
+          id: 0,
+          img: bucket,
+          count: 82,
+        },
+      ],
     });
+    navigate("/great-job");
+  };
+  const handleLoadBinNew = () => {
     navigate("/great-job");
   };
   const handleCancelBin = () => {
@@ -83,7 +88,7 @@ const LoadBin = () => {
         </div>
       ) : (
         <div className={` ${styles.btnWrapper}`}>
-          <TextBtn size="md" textColor="white" backgroundColor="noBg" onClick={handleLoadBin}>
+          <TextBtn size="md" textColor="white" backgroundColor="noBg" onClick={handleLoadBinNew}>
             DONE
           </TextBtn>
           <TextBtn size="md" textColor="white" backgroundColor="noBg" onClick={handleCancelBin}>

@@ -8,9 +8,10 @@ import TextBtn from "../textBtn/TextBtn";
 import { useNavigate } from "react-router-dom";
 
 const ProductsSelect = (props) => {
-  const { productsData, apply } = props; // Corrected destructuring
+  const { selectedProduct, apply } = props; // Corrected destructuring
   const [isChecked, setIsChecked] = useState(false);
 
+  console.log("selectedProduct", selectedProduct);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -19,40 +20,51 @@ const ProductsSelect = (props) => {
   const handleCleanDetergent = () => {
     navigate("/ultimate-clean-detergent");
   };
+  const handleConfirm = () => {
+    navigate("/finish-pay");
+  };
   return (
     <div className={styles.root}>
       <div className={styles.productWrapper}>
-        <h2 className={styles.title}>QUICK $8</h2>
+        <h2 className={styles.title}>{selectedProduct?.title}</h2>
         <div className={styles.subCategoryWrapper}>
           <div className={styles.textWrapper}>
             <p className={styles.para}>Detergent-Mountain Fresh</p>
             <img src={yellowReload} alt="reload-icon" className={styles.reloadImg} />
-            <p className={styles.type}>CHANGE</p>
+            <p className={styles.type} onClick={handleCleanDetergent}>
+              CHANGE
+            </p>
           </div>
         </div>
         <div className={styles.subCategoryWrapper}>
           <div className={styles.textWrapper}>
             <p className={styles.para}>Cold Water</p>
             <img src={yellowReload} alt="reload-icon" className={styles.reloadImg} />
-            <p className={styles.type}>CHANGE</p>
+            <p className={styles.type} onClick={handleCleanDetergent}>
+              CHANGE
+            </p>
           </div>
         </div>
         <div className={styles.subCategoryWrapper}>
           <div className={styles.textWrapper}>
             <p className={styles.para}>Time Dray 45 min</p>
             <img src={yellowReload} alt="reload-icon" className={styles.reloadImg} />
-            <p className={styles.type}>CHANGE</p>
+            <p className={styles.type} onClick={handleCleanDetergent}>
+              CHANGE
+            </p>
           </div>
         </div>
         <div className={styles.subCategoryWrapper}>
           <div className={styles.textWrapper}>
             <p className={styles.para}>Softner-None</p>
             <img src={yellowReload} alt="reload-icon" className={styles.reloadImg} />
-            <p className={styles.type}>CHANGE</p>
+            <p className={styles.type} onClick={handleCleanDetergent}>
+              CHANGE
+            </p>
           </div>
         </div>
         <div className={styles.Bottomwrapper}>
-          <TextBtn size="sm" backgroundColor="whiteBg" textColor="gray" onClick={handleCleanDetergent}>
+          <TextBtn size="sm" backgroundColor="whiteBg" textColor="gray" onClick={handleConfirm}>
             CONFIRM
           </TextBtn>
           {!apply && (

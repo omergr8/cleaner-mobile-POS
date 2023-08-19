@@ -1,0 +1,26 @@
+.singleImgWrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 5px !important;
+  }
+  .loadText {
+    font-size: 10px;
+    font-family: "ABeeZee";
+    font-weight: 300;
+    color: #e9ebff;
+    margin-bottom: 3px;
+  }
+  .mobileImage {
+    width: 70px;
+    height: auto;
+  }
+  
+  .smallNumber {
+    font-size: 14px;
+    font-family: "ABeeZee";
+    font-weight: 300;
+    color: #e9ebff;
+    margin-top: 5px;
+  }
+  
