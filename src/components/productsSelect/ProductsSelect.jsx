@@ -26,7 +26,7 @@ const ProductsSelect = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.productWrapper}>
-        <h2 className={styles.title}>{selectedProduct?.title}</h2>
+        <h2 className={styles.title}>{selectedProduct?.title} ${selectedProduct?.price}</h2>
         <div className={styles.subCategoryWrapper}>
           <div className={styles.textWrapper}>
             <p className={styles.para}>Detergent-Mountain Fresh</p>

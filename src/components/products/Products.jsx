@@ -2,10 +2,10 @@
 import styles from "./products.module.css";
 
 const Products = (props) => {
-  const { productsData, selectedProduct, setselectedProduct } = props;
+  const { productsData, setSelectedProductStatus, setselectedProduct } = props;
 
   const handleSelectedProduct = (product) => {
-    // console.log("product", product);
+    setSelectedProductStatus(true);
     setselectedProduct(product);
   };
 

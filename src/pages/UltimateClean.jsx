@@ -14,6 +14,8 @@ import { ProductsSelect } from "../components/index";
 
 const UltimateClean = () => {
   const [selectedProduct, setselectedProduct] = useState({});
+  const [selectSubCategory, setSelectSubCategory] = useState({});
+  const [selectedProductStatus, setSelectedProductStatus] = useState(false)
 
   const productData = useStore((state) => state.products);
 
@@ -30,14 +32,19 @@ const UltimateClean = () => {
         {productData.map((product, index) => (
           <div className={styles.productsWrapper} key={index}>
             <BucketCount product={product} />
-            {selectedProduct !== {} ? (
+            {!selectedProductStatus ? (
               <Products
                 productsData={product.productData}
                 selectedProduct={selectedProduct}
                 setselectedProduct={setselectedProduct}
+                setSelectedProductStatus={setSelectedProductStatus}
               />
             ) : (
-              <ProductsSelect selectedProduct={selectedProduct} />
+              <ProductsSelect
+                selectedProduct={selectedProduct}
+                selectSubCategory={selectSubCategory}
+                setSelectSubCategory={setSelectSubCategory}
+              />
             )}
           </div>
         ))}

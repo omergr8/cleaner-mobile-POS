@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import { TextBtn } from "../index";
 import styles from "./detergentCard.module.css";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
-const DetergentCard = () => {
+const DetergentCard = (props) => {
+  const { subCategories } = props;
   const navigate = useNavigate();
 
   const handleConfirmSelection = () => {
@@ -11,24 +13,24 @@ const DetergentCard = () => {
   };
   return (
     <div className={styles.box}>
-      <h2 className={styles.heading}>DETERGENT</h2>
+      <h2 className={styles.heading}>{subCategories?.title}</h2>
       <div className={styles.detergentTable}>
         <div className={styles.wrapperList}>
-          <p className={styles.title}>Mountain Fresh</p>
-          <h6 className={styles.price}>Included</h6>
+          <p className={styles.title}>{subCategories?.subCategoriesData[0]?.title}</p>
+          <h6 className={styles.price}>{subCategories?.subCategoriesData[0]?.price}</h6>
         </div>
         <div className={styles.wrapperList}>
-          <p className={styles.title}>Tide-Itchy</p>
-          <h6 className={styles.price}>+ $2.00</h6>
+          <p className={styles.title}>{subCategories?.subCategoriesData[1]?.title}</p>
+          <h6 className={styles.price}>{subCategories?.subCategoriesData[1]?.price}</h6>
         </div>
         <div className={styles.wrapperList}>
-          <p className={styles.title}>Gain-Smell Strong</p>
-          <h6 className={styles.price}>+ $3.00</h6>
+          <p className={styles.title}>{subCategories?.subCategoriesData[2]?.title}</p>
+          <h6 className={styles.price}>{subCategories?.subCategoriesData[2]?.price}</h6>
         </div>
       </div>
 
       <TextBtn size="lg" backgroundColor="noBg" textColor="white" onClick={handleConfirmSelection}>
-       <AiOutlineCheckCircle />  Confirm
+        <AiOutlineCheckCircle /> Confirm
       </TextBtn>
     </div>
   );
