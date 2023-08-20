@@ -4,20 +4,424 @@ import binVideo from "../../assets/da6ef29703.mp4";
 import bucket from "../../assets/bucket.png";
 import { useNavigate } from "react-router-dom";
 import { useStore, useBuckettStore } from "../../store/productStore";
+import yellowReload from "../../assets/yellow-reload.png";
+import blueReload from "../../assets/blue-reload.png";
 
 const LoadBin = () => {
   const navigate = useNavigate();
 
-  const bucketData = useBuckettStore.getState().bucketData;
-  const productData = useStore((state) => state.products);
+  const productData = useStore.getState().products;
+  // const productData = useStore((state) => state.products);
 
   const handleLoadBin = () => {
-    useBuckettStore.setState({
-      bucketData: [
+    useStore.setState({
+      products: [
         {
           id: 0,
           img: bucket,
           count: 82,
+          productData: [
+            {
+              id: 0,
+              title: "QUICK",
+              price: 8,
+              img: bucket,
+              count: 82,
+              subCategories: [
+                {
+                  id: 0,
+                  title: "Detergent-Mountain Fresh",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 1,
+                  title: "Cold Water",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 2,
+                  title: "Time Dry 45 min",
+                  icon: blueReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 3,
+                  title: "Softner-None",
+                  icon: yellowReload,
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 1,
+              title: "Colors",
+              price: 9,
+              img: bucket,
+              count: 83,
+              subCategories: [
+                {
+                  id: 0,
+                  title: "Detergent-Mountain Fresh",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 1,
+                  title: "Cold Water",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 2,
+                  title: "Time Dry 45 min",
+                  icon: blueReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 3,
+                  title: "Softner-None",
+                  icon: yellowReload,
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: "Whites",
+              price: 10,
+              img: bucket,
+              count: 82,
+              subCategories: [
+                {
+                  id: 0,
+                  title: "Detergent-Mountain Fresh",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 1,
+                  title: "Cold Water",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 2,
+                  title: "Time Dry 45 min",
+                  icon: blueReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 3,
+                  title: "Softner-None",
+                  icon: yellowReload,
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 3,
+              title: "Deep",
+              price: 12,
+              img: bucket,
+              count: 82,
+              subCategories: [
+                {
+                  id: 0,
+                  title: "Detergent-Mountain Fresh",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 1,
+                  title: "Cold Water",
+                  icon: yellowReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 2,
+                  title: "Time Dry 45 min",
+                  icon: blueReload,
+                  type: "CHANGE",
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+                {
+                  id: 3,
+                  title: "Softner-None",
+                  icon: yellowReload,
+                  subCategoriesData: [
+                    {
+                      id: 0,
+                      title: "Mountain Fresh",
+                      price: 2,
+                    },
+                    {
+                      id: 1,
+                      title: "Tide - Itchy",
+                      price: 3,
+                    },
+                    {
+                      id: 2,
+                      title: "Gain-Smell Strong",
+                      price: 2,
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     });
@@ -30,7 +434,7 @@ const LoadBin = () => {
     navigate("/cancel-popup");
   };
 
-  console.log("bucketData", bucketData);
+  // console.log("productData.productData", productData);
   return (
     <section className={`${styles.box}`}>
       <Heading size="large">PLEASE LOAD BIN</Heading>
@@ -39,7 +443,7 @@ const LoadBin = () => {
           Please make sure the lid is completely closed
         </Heading>
       </div>
-      {bucketData.length === 0 ? (
+      {productData.length === 0 ? (
         <div className={`${styles.videoWrapper}`}>
           <video width="340" height="360" autoPlay loop className={styles.video} controls="hidden">
             <source src={binVideo} type="video/mp4" />
@@ -48,7 +452,7 @@ const LoadBin = () => {
       ) : (
         <>
           <div
-            className={`${styles.videoWrapper} ${bucketData.length > 0 ? styles.minivideo : ""}`}>
+            className={`${styles.videoWrapper} ${productData.length > 0 ? styles.minivideo : ""}`}>
             <video
               width="340"
               height="360"
@@ -59,11 +463,11 @@ const LoadBin = () => {
               <source src={binVideo} type="video/mp4" />
             </video>
           </div>
-          {bucketData.length === 0 ? (
+          {productData.length === 0 ? (
             <></>
           ) : (
             <div className={styles.binsList}>
-              {bucketData.map((data, index) => (
+              {productData.map((data, index) => (
                 <div className={`${styles.outerWrapper}`} key={index}>
                   <div className={styles.binWrapper}>
                     <p className={styles.loadText}>Load Bin</p>
@@ -77,7 +481,7 @@ const LoadBin = () => {
         </>
       )}
 
-      {bucketData.length === 0 ? (
+      {productData.length === 0 ? (
         <div className={` ${styles.btnWrapper}`}>
           <TextBtn size="md" textColor="green" backgroundColor="noBg" onClick={handleLoadBin}>
             DONE

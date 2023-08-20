@@ -15,7 +15,7 @@ const Products = (props) => {
         productsData.map((product, index) => (
           <div className={styles.productWrapper} key={index}>
             <h2 className={styles.title} onClick={() => handleSelectedProduct(product)}>
-              {product.title}
+              {product.title} ${product.price}
             </h2>
             <div className={styles.subCategoryWrapper}>
               {product.subCategories.map((subCategory) => (
