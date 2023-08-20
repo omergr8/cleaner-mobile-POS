@@ -3,9 +3,16 @@ import cash from "../../assets/cash.png";
 import card from "../../assets/card.png";
 import { Heading, TransparentPopup } from "../index";
 
-const HowToPayPopup = () => {
-  const handleCashNavigate = {};
-  const handleCardNavigate = {};
+const HowToPayPopup = (props) => {
+  const {setSteps} = props;
+  const handleCashNavigate = () => {
+    setSteps("cash");
+  };
+  
+  const handleCardNavigate = () => {
+    setSteps("card");
+  };
+  
   return (
     <TransparentPopup>
       <div style={{ margin: "-30px 0px 90px" }}>

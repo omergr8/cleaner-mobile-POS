@@ -1,25 +1,29 @@
-import React from 'react'
+import React from "react";
 import { Heading, TextBtn, TransparentPopup } from "../index";
-import { BsChevronDoubleRight } from 'react-icons/bs';
+import { BsChevronDoubleRight } from "react-icons/bs";
 
-const Swip = () => {
+const Swip = (props) => {
+  const { setSteps } = props;
+  const handleSwip = () => {
+    setSteps("allSet");
+  };
   return (
     <TransparentPopup>
-        <div>
-        <TextBtn size="xl" backgroundColor="noBg" textColor="light" border='borderLight'>
-            SWIPE <BsChevronDoubleRight />
-          </TextBtn>
-          <div style={{height: '15px'}}></div>
+      <div>
+        <TextBtn size="xl" backgroundColor="noBg" textColor="light" border="borderLight" onClick={handleSwip}>
+          SWIPE <BsChevronDoubleRight />
+        </TextBtn>
+        <div style={{ height: "15px" }}></div>
         <Heading size="small" color="white">
           SWIPE OR TAP CARD BELOW
         </Heading>
-        <div style={{height: '85px'}}></div>
+        <div style={{ height: "85px" }}></div>
         <Heading size="medium" color="blue">
           $19.49
         </Heading>
-        </div>
-      </TransparentPopup>
-  )
-}
+      </div>
+    </TransparentPopup>
+  );
+};
 
-export default Swip
+export default Swip;
